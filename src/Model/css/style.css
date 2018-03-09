@@ -1,0 +1,16 @@
+nav
+{
+    padding: 5px;
+}
+
+.d9
+{
+    background-color: #D9D9D9;
+}
+
+.create-form
+{
+    border:2px solid #D9D9D9;
+    border-radius: 10px;
+    padding: 5px;
+}

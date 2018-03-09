@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <nav class="blue darken-2">
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo">Logo</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li>
+                    <a href="sass.html">Sass</a>
+                </li>
+                <li>
+                    <a href="badges.html">Components</a>
+                </li>
+                <li>
+                    <a data-target="modal1" class="btn modal-trigger">
+                        <i class="small material-icons left">supervisor_account</i>Sign In</a>
+
+                    <!--
+ <button> <i class="large material-icons">supervisor_account</i>Modal</button>
+<a href="collapsible.html">
+                        <i class="large material-icons">supervisor_account</i>JavaScript</a>
+                    -->
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main class="container">
+        <div class="row center-align">
+            <h3>Control Paso Producción</h3>
+            <div class="row">
+                <h6>Subtitle</h6>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam minus dolores commodi repellendus, ea
+                    quo nemo quasi doloribus dicta dolorum, blanditiis totam unde tenetur in sed. Dolorem hic quis sed.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s6 center-align">
+                <h5>Subtitle</h5>
+                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia et facilis blanditiis commodi, ab adipisci
+                    aliquam vitae quisquam iusto. Aut illo id exercitationem nisi non esse voluptatem dolor officiis enim.</p>
+            </div>
+            <div class="col s6">
+                <h5>Subtitle</h5>
+                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia et facilis blanditiis commodi, ab adipisci
+                    aliquam vitae quisquam iusto. Aut illo id exercitationem nisi non esse voluptatem dolor officiis enim.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="carousel">
+                <a class="carousel-item" href="#one!">
+                    <img src="media/images/carousel/imagen1.jpeg">
+                </a>
+                <a class="carousel-item" href="#two!">
+                    <img src="media/images/carousel/imagen2.jpeg">
+                </a>
+                <a class="carousel-item" href="#three!">
+                    <img src="media/images/carousel/imagen3.jpeg">
+                </a>
+                <a class="carousel-item" href="#four!">
+                    <img src="media/images/carousel/imagen4.jpeg">
+                </a>
+                <a class="carousel-item" href="#five!">
+                    <img src="media/images/carousel/imagen5.jpeg">
+                </a>
+            </div>
+        </div>
+    </main>
+    <footer class="page-footer blue darken-2">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Footer Content</h5>
+                    <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Links</h5>
+                    <ul>
+                        <li>
+                            <a class="grey-text text-lighten-3" href="#!">Link 1</a>
+                        </li>
+                        <li>
+                            <a class="grey-text text-lighten-3" href="#!">Link 2</a>
+                        </li>
+                        <li>
+                            <a class="grey-text text-lighten-3" href="#!">Link 3</a>
+                        </li>
+                        <li>
+                            <a class="grey-text text-lighten-3" href="#!">Link 4</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!---->
+        <!-- Modal Trigger -->
+
+
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal white black-text">
+            <div class="modal-content">
+                <div class="row center-align">
+                    <h5>Log in</h5>
+                </div>
+                <div class="row">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">assignment_ind</i>
+                            <input id="user" type="text" class="validate">
+                            <label for="user">Usuario</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">lock</i>
+                            <input id="icon_prefix" type="password" class="validate">
+                            <label for="icon_prefix">Password</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close red waves-effect waves-green btn-flat">Cancelar</a>
+                <a href="views/pUnoVUno.html" class="modal-action green waves-effect waves-green btn-flat">Ingresar</a>
+            </div>
+        </div>
+        <!---->
+        <div class="footer-copyright">
+            <div class="container">
+                © 2014 Copyright Text
+                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+
+        $(document).ready(function () {
+            $('.carousel').carousel();
+
+            $('.modal').modal({
+                dismissible: true, // Modal can be dismissed by clicking outside of the modal
+                opacity: .5, // Opacity of modal background
+                inDuration: 300, // Transition in duration
+                outDuration: 200, // Transition out duration
+                startingTop: '4%', // Starting top style attribute
+                endingTop: '10%', // Ending top style attribute
+                ready: function (modal, trigger) { // Callback for Modal open. Modal and trigger parameters available.
+
+                },
+                complete: function () { } // Callback for Modal close
+            }
+            );
+
+        });
+    </script>
+</body>
+
+</html>

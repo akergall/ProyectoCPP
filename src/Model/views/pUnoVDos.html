@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="../css/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="../css/style.css">
+    <style>
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a href="#" data-activates="nav-mobile" class="button-collapse top-nav waves-effect waves-light circle hide-on-large-only">
+                <i class="material-icons">menu</i>
+            </a>
+        </div>
+        <ul id="nav-mobile" class="side-nav fixed" style="transform: translateX(0%);">
+            <li>
+                <div class="user-view">
+                    <div class="background">
+                        <img src="../media/images/others/code.jpeg">
+                    </div>
+                    <a href="#!user">
+                        <img class="circle" src="../media/images/others/usuario.png">
+                    </a>
+                    <a href="#!name">
+                        <span class="white-text name">John Doe</span>
+                    </a>
+                    <a href="#!email">
+                        <span class="white-text email">jdandturk@gmail.com</span>
+                    </a>
+                </div>
+            </li>
+            <li class="bold">
+                <a href="pUnoVUno.html" class="waves-effect waves-teal">Inicio</a>
+            </li>
+            <li class="bold">
+                    <a href="../index.html" class="waves-effect waves-teal">Salir</a>
+                </li>
+            <li class="no-padding">
+                <ul class="collapsible collapsible-accordion">
+                    <li class="bold">
+                        <a class="collapsible-header waves-effect waves-teal">Control paso producción</a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li>
+                                    <a href="#">Crear solicitud</a>
+                                </li>
+                                <li>
+                                    <a href="#">Solicitudes aprobadas</a>
+                                </li>
+                                <li>
+                                    <a href="#">Solicitudes en espera</a>
+                                </li>
+                                <li>
+                                    <a href="#">Solicitudes rechazadas</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </li>
+
+                </ul>
+            </li>
+            <li class="no-padding">
+                <ul class="collapsible collapsible-accordion">
+                    <li class="bold">
+                        <a class="collapsible-header waves-effect waves-teal">Normas de desarrollo</a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li>
+                                    <a href="#">Clases</a>
+                                </li>
+                                <li>
+                                    <a href="#">Procedimientos almacenados</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </li>
+
+                </ul>
+            </li>
+
+        </ul>
+        <!-- Sidebar BSA-->
+    </header>
+    <main style="padding-right: 300px">
+        <h3>
+            Crear solicitud paso producción
+        </h3>
+        <div class="row container create-form">
+            <div class="row">
+                <div class="input-field col s6">
+                    <input id="nroCambio" type="text" class="validate">
+                    <label for="nroCambio">N° Cambio</label>
+                </div>
+                <div class="input-field col s6">
+                    <select id="sPrioridad" class="validate">
+                        <option value="" disabled selected>Seleccione una opcion</option>
+                        <option value="">Baja</option>
+                        <option value="">Media</option>
+                        <option value="">ALta</option>
+                    </select>
+                    <label for="sPrioridad">Prioridad del cambio</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s6">
+                    <input id="nroRed" type="text" class="validate">
+                    <label for="nroRed">N° Ticket Redmine</label>
+                </div>
+                <div class="input-field col s6">
+                    <input id="nroMda" type="text" class="validate">
+                    <label for="nroMda">N° Ticket MDA</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s6">
+                    <select id="promotor" class="validate" multiple>
+                        <option value="" disabled selected>Seleccione una o mas opciones</option>
+                        <option value="">Promotor 1</option>
+                        <option value="">Promotor 2</option>
+                        <option value="">Promotor 3</option>
+                    </select>
+                    <label for="promotor">Promotor del cambio</label>
+                </div>
+                <div class="input-field col s6">
+                    <input id="anexoPromo" type="text" class="validate">
+                    <label for="anexoPromo">Anexo</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s6">
+                    <select id="ejecutor" class="validate" multiple>
+                        <option value="" disabled selected>Seleccione una o mas opciones</option>
+                        <option value="">Ejecutor 1</option>
+                        <option value="">Ejecutor 2</option>
+                        <option value="">Ejecutor 3</option>
+                    </select>
+                    <label for="ejecutor">Ejecutor del cambio</label>
+                </div>
+                <div class="input-field col s6">
+                    <input id="anexoEje" type="text" class="validate">
+                    <label for="anexoEje">Anexo</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s6">
+                    <select id="servicio" class="validate" multiple>
+                        <option value="" disabled selected>Seleccione una o mas opciones</option>
+                        <option value="">Servicio 1</option>
+                        <option value="">Servicio 2</option>
+                        <option value="">Servicio 3</option>
+                    </select>
+                    <label for="servicio">Servicios afectados</label>
+                </div>
+                <div class="input-field col s6">
+                    <select id="area" class="validate" multiple>
+                        <option value="" disabled selected>Seleccione una o mas opciones</option>
+                        <option value="">Area 1</option>
+                        <option value="">Area 2</option>
+                        <option value="">Area 3</option>
+                    </select>
+                    <label for="area">Areas que solicita el cambio</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s6">
+                    <input id="soporte" type="text" class="validate">
+                    <label for="soporte">Soporte externo/fono</label>
+                </div>
+                <div class="col s6 row">
+                    <div class="col s6 input-field">
+                        <input id="fej" type="text" class="datepicker">
+                        <label for="fej">Fecha ejecución</label>
+                    </div>
+                    <div class="col s6 input-field">
+                        <input id="oj" type="text" class="timepicker">
+                        <label for="hoj">Hora ejecución</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s6">
+                        <input id="gar" type="text" class="datepicker">
+                        <label for="gar">Periodo de garantía</label>
+                </div>
+                <div class="input-field col s6">
+                    <input id="path" type="text" class="validate">
+                    <label for="path">Path de TFS/Soursafe</label>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer style="padding-right: 300px" class="page-footer blue darken-2">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Footer Content</h5>
+                    <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="footer-copyright">
+            <div class="container">
+                © 2014 Copyright Text
+                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/jquery.js"></script>
+    <script type="text/javascript" src="../js/materialize.min.js"></script>
+    <script>
+
+        $(document).ready(function () {
+
+
+            $('.button-collapse').sideNav({
+                menuWidth: 300, // Default is 300
+                edge: 'right', // Choose the horizontal origin
+                closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+                draggable: true, // Choose whether you can drag to open on touch screens,
+                onOpen: function (el) { /* Do Stuff */ }, // A function to be called when sideNav is opened
+                onClose: function (el) { /* Do Stuff */ }, // A function to be called when sideNav is closed
+            }
+            );
+
+            $('.datepicker').pickadate({
+                selectMonths: true, // Creates a dropdown to control month
+                selectYears: 15, // Creates a dropdown of 15 years to control year,
+                today: 'Hoy',
+                clear: 'Limpiar',
+                close: 'Ok',
+                closeOnSelect: false // Close upon selecting a date,
+            });
+            $('.timepicker').pickatime({
+                default: 'Ahora', // Set default time: 'now', '1:30AM', '16:30'
+                fromnow: 0,       // set default time to * milliseconds from now (using with default = 'now')
+                twelvehour: false, // Use AM/PM or 24-hour format
+                donetext: 'OK', // text for done-button
+                cleartext: 'Limpiar', // text for clear-button
+                canceltext: 'Cancelar', // Text for cancel-button
+                autoclose: false, // automatic close timepicker
+                ampmclickable: true, // make AM PM clickable
+                aftershow: function () { } //Function for after opening timepicker
+            });
+            $('select').material_select();
+
+            $('.modal').modal({
+                dismissible: true, // Modal can be dismissed by clicking outside of the modal
+                opacity: .5, // Opacity of modal background
+                inDuration: 300, // Transition in duration
+                outDuration: 200, // Transition out duration
+                startingTop: '4%', // Starting top style attribute
+                endingTop: '10%', // Ending top style attribute
+                ready: function (modal, trigger) { // Callback for Modal open. Modal and trigger parameters available.
+
+                },
+                complete: function () { } // Callback for Modal close
+            }
+            );
+
+        });
+    </script>
+</body>
+
+</html>
